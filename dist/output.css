@@ -570,33 +570,85 @@ video {
   }
 }
 
+.box {
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-width: 400px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.box {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 216 / var(--tw-border-opacity, 1));
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.m-32 {
+  margin: 8rem;
+}
+
 .flex {
   display: flex;
 }
 
-.max-w-xl {
-  max-width: 36rem;
+.max-h-3 {
+  max-height: 0.75rem;
+}
+
+.max-w-14 {
+  max-width: 3.5rem;
 }
 
 .flex-col {
   flex-direction: column;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.items-center {
+  align-items: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-8 {
   gap: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -608,61 +660,16 @@ video {
   color: rgb(113 113 122 / var(--tw-text-opacity, 1));
 }
 
+.text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity, 1));
+}
+
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity, 1));
 }
 
-* {
-  padding: 0;
-  margin: 0;
+.opacity-50 {
+  opacity: 0.5;
 }
-
-.mini-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 80px 50px;
-}
-
-.mini-box {
-  padding: 50px 32px;
-  border: 2px solid #d9d9d9;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.mini-box img {
-  max-width: 50px;
-}
-
-.mini-box h1 {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.mini-box p {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  color: #71717a;
-  width: 18rem;
-}
-
-.mini-button a {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.mini-button img {
-  height: 16px;
-}
-
-
