@@ -4,6 +4,6 @@
 
 @layer components {
   .box {
-    @apply border-zinc-300 border-2 max-w-fit p-10 rounded-xl flex flex-col space-y-4 items-center text-center max-w-[400px];
+    @apply border-zinc-300 border-2 max-w-fit p-10 rounded-xl flex flex-col space-y-4 items-center text-center w-full;
   }
 }

@@ -572,9 +572,9 @@ video {
 
 .box {
   display: flex;
+  width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  max-width: 400px;
   flex-direction: column;
   align-items: center;
 }
@@ -594,10 +594,6 @@ video {
   text-align: center;
 }
 
-.m-32 {
-  margin: 8rem;
-}
-
 .flex {
   display: flex;
 }
@@ -610,20 +606,16 @@ video {
   max-width: 3.5rem;
 }
 
-.flex-col {
-  flex-direction: column;
-}
-
 .items-center {
   align-items: center;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.justify-center {
+  justify-content: center;
 }
 
-.gap-8 {
-  gap: 2rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
